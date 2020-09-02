@@ -2,11 +2,12 @@
 
 My friend and I, as teaching assistants of Software-defined Mobile Networks Course, held a workshop on SDN opensource tools like Mininet, Open vSwitch, and Opendaylight controller and P4 language and related simulation tools and designed these two assignements.
 
-## Virtual Network Developments based on SDN
+## Assignment 1: Virtual Network Developments based on SDN
 This assignment consists of two problems, about routing and VXLAN tunnelling in SDN environment.
-#### You can found the problems at ... and a sample soultion at ....
+#### [here](https://gitlab.com/mamadz97/software-defined-networks-assignments/-/tree/master/assignment%201) You can found the problems as well as the sample soultion.
 
-## P4-enabled Softwre-defined Networking
+## Assignment 2: P4-enabled Softwre-defined Networking
 The second assignment id also comprised of two problems, about a novel load balancing technique in programmable data plane and a minimalistis simulation of an LTE mobile network.
-#### You can found the problems at ... and a sample soultion at ....
-#### The first problem is accompanied by some files that can be found at ... 
+#### To run the code, use utilities provided at [https://github.com/p4lang/tutorials](https://github.com/p4lang/tutorials).
+#### [here](https://gitlab.com/mamadz97/software-defined-networks-assignments/-/tree/master/assignment%202) You can found the problems as well as the sample soultion.
+#### The first problem is accompanied by some files that can be found.
