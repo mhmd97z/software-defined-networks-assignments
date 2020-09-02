@@ -9,5 +9,4 @@ This assignment consists of two problems, about routing and VXLAN tunnelling in 
 ## Assignment 2: P4-enabled Softwre-defined Networking
 The second assignment id also comprised of two problems, about a novel load balancing technique in programmable data plane and a minimalistis simulation of an LTE mobile network.
 #### To run the code, use utilities provided at [https://github.com/p4lang/tutorials](https://github.com/p4lang/tutorials).
-#### [Here](https://gitlab.com/mamadz97/software-defined-networks-assignments/-/tree/master/assignment%202) you can found the problems as well as the sample soultion.
-#### The first problem is accompanied by some files that can be found.
+#### [Here](https://gitlab.com/mamadz97/software-defined-networks-assignments/-/tree/master/assignment%202) you can found the problems as well as the sample soultion. Also note that the first problem is accompanied by some files.
