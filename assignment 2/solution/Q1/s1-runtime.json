@@ -1,0 +1,68 @@
+{
+  "target": "bmv2",
+  "p4info": "build/dash.p4.p4info.txt",
+  "bmv2_json": "build/dash.json",
+  "table_entries": [
+    
+    {
+      "table": "MyIngress.relay",
+      "match": {
+        "standard_metadata.ingress_port": 6
+      },
+      "action_name": "MyIngress.relay_forward",
+      "action_params": {
+        "port": 6
+      }
+        
+    },
+
+    {
+      "table": "MyIngress.know_path",
+      "match": {
+        "standard_metadata.ingress_port": 1
+      },
+      "action_name": "MyIngress.write_data",
+      "action_params": {}
+        
+    },
+      {
+      "table": "MyIngress.know_path",
+      "match": {
+        "standard_metadata.ingress_port": 2
+      },
+      "action_name": "MyIngress.write_data",
+      "action_params": {}
+        
+    },
+
+     {
+      "table": "MyIngress.know_path",
+      "match": {
+        "standard_metadata.ingress_port": 3
+      },
+      "action_name": "MyIngress.write_data",
+      "action_params": {}
+        
+    },
+
+     {
+      "table": "MyIngress.know_path",
+      "match": {
+        "standard_metadata.ingress_port": 4
+      },
+      "action_name": "MyIngress.write_data",
+      "action_params": {}
+        
+    },
+    {
+      "table": "MyIngress.take_hash",
+      "match": {
+        "standard_metadata.ingress_port": 5
+      },
+      "action_name": "MyIngress.make_decision",
+      "action_params": {}
+        
+    }
+
+  ]
+}
