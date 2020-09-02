@@ -1,0 +1,34 @@
+{
+  "target": "bmv2",
+  "p4info": "build/part1.p4.p4info.txt",
+  "bmv2_json": "build/part1.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.DedicatedBearerTunnel_exact",
+      "default_action": true,
+      "action_name": "MyIngress.drop",
+      "action_params": { }
+    },
+    {
+      "table": "MyIngress.DedicatedBearerTunnel_exact",
+      "match": {
+        "hdr.DedicatedBearerTunnel.uid": 1
+      },
+      "action_name": "MyIngress.uid_forward",
+      "action_params": {
+        "port": 2
+      }
+    },
+    {
+      "table": "MyIngress.DedicatedBearerTunnel_exact",
+      "match": {
+        "hdr.DedicatedBearerTunnel.uid": 2
+      },
+      "action_name": "MyIngress.uid_forward",
+      "action_params": {
+        "port": 1
+      }
+    }
+    
+  ]
+}
