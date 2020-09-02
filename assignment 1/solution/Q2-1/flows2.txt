@@ -1,0 +1,12 @@
+table=0,in_port=1,actions=set_field:100->tun_id,resubmit(,1)
+table=0,in_port=2,actions=set_field:200->tun_id,resubmit(,1)
+table=0,actions=resubmit(,1)
+table=1,tun_id=100,arp,nw_dst=10.0.0.1,actions=output:3
+table=1,tun_id=200,arp,nw_dst=10.0.0.1,actions=output:3
+table=1,tun_id=100,arp,nw_dst=10.0.0.2,actions=output:1
+table=1,tun_id=200,arp,nw_dst=10.0.0.2,actions=output:2
+table=1,tun_id=100,ip,nw_dst=10.0.0.1,actions=output:3
+table=1,tun_id=200,ip,nw_dst=10.0.0.1,actions=output:3
+table=1,tun_id=100,ip,nw_dst=10.0.0.2,actions=output:1
+table=1,tun_id=200,ip,nw_dst=10.0.0.2,actions=output:2
+
